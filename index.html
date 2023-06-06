@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Proyecto de encuesta</h1>
+      <p id="description">
+        Ejercicio para la certificación de diseño responsivo de freeCodeCamp
+      </p>
+    </header>
+
+    <form id="survey-form" action="#">
+      <label id="name-label" for="name"> Name: 
+        <input type="text" name="name" id="name" placeholder="Nombre" required />
+      </label>
+      <label id="email-label" for="email"> E-mail: 
+        <input type="email" name="email" id="email" placeholder="Email" required />
+      </label>
+      <label id="number-label" for="number"> Number: 
+        <input type="number" name="number" id="number" min="13" max="120" placeholder="Edad" />
+      </label>Elije una opcion:  
+      <select name="comboBox" id="dropdown">
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+      </select>
+      <label for="radioBoxes">Elije una opción: 
+        <input type="radio" name="radioBoxes" value="1" id="radio1">
+        <input type="radio" name="radioBoxes" value="2" id="radio2">
+      </label>
+      <label for="checkBoxes">Elije otra opción: 
+        <input type="checkbox" name="checkBoxes" id="chk1" value="1">
+        <input type="checkbox" name="checkBoxes" id="chk2" value="2">
+      </label>
+      <textarea name="textBox" id="" cols="30" rows="10"></textarea>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </body>
+</html>
